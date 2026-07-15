@@ -21,5 +21,4 @@ def test_multiply():
 def test_divide():
     assert divide(6, 2) == 3
     with pytest.raises(ValueError):
-        divide(5, 0)
-        
+        divide(5, 0)   
