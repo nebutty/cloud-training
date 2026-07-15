@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitHub Actions S3 Deployment</title>
+
+<style>
+body {
+    font-family: Arial;
+    text-align:center;
+    margin-top:50px;
+}
+
+.badge {
+    background:#2c3e50;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    display:inline-block;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🚀 Deployed from GitHub Actions!</h1>
+
+<div class="badge">
+<p>
+Last deployed:
+<span id="deploy-time"></span>
+</p>
+</div>
+
+
+<p>
+This website was automatically deployed using GitHub Actions CI/CD.
+</p>
+
+
+<script>
+document.getElementById("deploy-time").innerText =
+new Date().toLocaleString();
+</script>
+
+
+</body>
+</html>
